@@ -8,5 +8,7 @@
             "email": "tadeufbarbosa@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "teedmaker/tmphp-core": "^1.0"
+    }
 }
