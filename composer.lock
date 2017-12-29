@@ -4,6 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "28445655ca821ffc4a516363258ea20c",
     "packages": [
         {
@@ -18,10 +19,23 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/teedmaker/tmphp-core/zipball/71272f4a6bdeba0d1a9dae632fd0eb1ad5474338",
                 "reference": "71272f4a6bdeba0d1a9dae632fd0eb1ad5474338",
-                "shasum": ""
+=======
+    "content-hash": "3e7f442980cc862f8deb4cf029809126",
+    "packages": [
+        {
+            "name": "teedmaker/tmphp-core",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/teedmaker/tmphp-core.git",
+                "reference": "36cb10fc0efaf036660e6944cac03617cfa399b7"
             },
-            "require": {
-                "vlucas/phpdotenv": "^2.4"
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/teedmaker/tmphp-core/zipball/36cb10fc0efaf036660e6944cac03617cfa399b7",
+                "reference": "36cb10fc0efaf036660e6944cac03617cfa399b7",
+>>>>>>> parent of eb4953a... configurando dependências do composer
+                "shasum": ""
             },
             "type": "library",
             "autoload": {
@@ -40,6 +54,7 @@
                 }
             ],
             "description": "Core do Framework tmphp",
+<<<<<<< HEAD
             "time": "2017-12-29T21:40:30+00:00"
         },
         {
@@ -91,14 +106,15 @@
                 "environment"
             ],
             "time": "2016-09-01T10:05:43+00:00"
+=======
+            "time": "2017-12-29T18:13:45+00:00"
+>>>>>>> parent of eb4953a... configurando dependências do composer
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "teedmaker/tmphp-core": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
