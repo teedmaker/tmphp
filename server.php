@@ -27,4 +27,4 @@ require_once 'vendor/autoload.php';
 $dotenv = new Dotenv\Dotenv(__DIR__, '.env');
 $dotenv->load();
 
-echo getenv('APP_ENV');
+// getenv('APP_ENV')

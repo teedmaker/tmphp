@@ -4,26 +4,31 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "51419bb48939ddf569c7f3b135583fe8",
+    "content-hash": "28445655ca821ffc4a516363258ea20c",
     "packages": [
         {
             "name": "teedmaker/tmphp-core",
-            "version": "dev-master",
+            "version": "v1.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/teedmaker/tmphp-core.git",
-                "reference": "eaf95f568c21ceafb8744c8f4d699832fee1204a"
+                "reference": "71272f4a6bdeba0d1a9dae632fd0eb1ad5474338"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/teedmaker/tmphp-core/zipball/eaf95f568c21ceafb8744c8f4d699832fee1204a",
-                "reference": "eaf95f568c21ceafb8744c8f4d699832fee1204a",
+                "url": "https://api.github.com/repos/teedmaker/tmphp-core/zipball/71272f4a6bdeba0d1a9dae632fd0eb1ad5474338",
+                "reference": "71272f4a6bdeba0d1a9dae632fd0eb1ad5474338",
                 "shasum": ""
             },
             "require": {
                 "vlucas/phpdotenv": "^2.4"
             },
             "type": "library",
+            "autoload": {
+                "files": [
+                    "core/App/Start.php"
+                ]
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "Apache-2.0"
@@ -35,7 +40,7 @@
                 }
             ],
             "description": "Core do Framework tmphp",
-            "time": "2017-12-29T21:05:12+00:00"
+            "time": "2017-12-29T21:40:30+00:00"
         },
         {
             "name": "vlucas/phpdotenv",

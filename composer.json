@@ -9,6 +9,6 @@
         }
     ],
     "require": {
-        "teedmaker/tmphp-core": "dev-master"
+        "teedmaker/tmphp-core": "v1.0.x-dev"
     }
 }
