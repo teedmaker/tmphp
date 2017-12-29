@@ -9,6 +9,7 @@
         }
     ],
     "require": {
-        "teedmaker/tmphp-core": "^1.0"
+        "teedmaker/tmphp-core": "^1.0",
+        "vlucas/phpdotenv": "^2.4"
     }
 }
