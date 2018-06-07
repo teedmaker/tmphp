@@ -9,6 +9,7 @@
         }
     ],
     "require": {
-        "teedmaker/tmphp-core": "v1.0.x-dev"
+        "teedmaker/tmphp-core": "v1.0.x-dev",
+        "kint-php/kint": "^2.2"
     }
 }
