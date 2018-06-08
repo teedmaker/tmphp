@@ -7,9 +7,14 @@
             "name": "tadeubarbosa",
             "email": "tadeufbarbosa@gmail.com"
         }
-    ],
+	],
+	"autoload": {
+		"files": [
+			"core/bootstrap/start.php"
+		]
+	},
     "require": {
-        "teedmaker/tmphp-core": "v1.0.x-dev",
+        "vlucas/phpdotenv": "^2.4",
         "kint-php/kint": "^2.2"
     }
 }

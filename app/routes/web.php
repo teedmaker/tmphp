@@ -14,8 +14,10 @@ Route::group(['prefix'=>'users'], function() {
 	});
 });
 
-Route::group(['prefix'=>'abc', 'controller'=>'AbcController'], function() {
-	Route::get('123', 'getControl');
+Route::group(['prefix'=>'abc', 'controller'=>'AbcController', 'permission'=>'admin'], function() {
+	Route::get('{id}', function($id) {
+		echo "Your id is: {$id}";
+	});
 	Route::group(['prefix'=>'def'], function() {
 		Route::get('456', 'getTest');
 		Route::group(['prefix'=>'ghi', 'controller'=>'GHIController'], function() {
