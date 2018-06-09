@@ -3,21 +3,18 @@
 $method = strtolower($_SERVER['REQUEST_METHOD']);
 define('METHOD', $method);
 
-$requestUri = $_SERVER['REDIRECT_URL'];
-$phpSelf    = $_SERVER['PHP_SELF'];
-$phpSelf    = dirname($phpSelf, 2);
-
-$scheme   = $_SERVER['REQUEST_SCHEME'];
-$httpHost = $_SERVER['HTTP_HOST'];
-$host   = "{$scheme}://{$httpHost}{$phpSelf}/";
+$phpSelf  = dirname($_SERVER['PHP_SELF'], 2);
+$host     = "{$_SERVER['HTTP_HOST']}{$phpSelf}";
+$host     = str_replace('//', '/', $host);
+$host     = trim($host, '/');
+$host     = "{$_SERVER['REQUEST_SCHEME']}://{$host}/";
 define('HOST', $host);
 
-$scriptFileName = $_SERVER['SCRIPT_FILENAME'];
-$rootPath       = dirname($scriptFileName, 2);
+$rootPath = dirname($_SERVER['SCRIPT_FILENAME'], 2);
 $base = "{$rootPath}/";
 define('BASE', $base);
 
-$branch = str_replace("{$phpSelf}/", '', $requestUri);
+$branch = str_replace("{$phpSelf}/", '', $_SERVER['REQUEST_URI']);
 $branch = trim($branch, '/');
 $branch = empty($branch)? '/': $branch;
 define('BRANCH', $branch);

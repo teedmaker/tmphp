@@ -17,6 +17,7 @@ class AutoLoadClass
 		self::$class  = str_replace(self::$primaryClass, '', $class);
 		self::$class .= '.php';
 		self::$path  .= $path . self::$class;
+		self::$path   = str_replace(['\\','/'], DIRECTORY_SEPARATOR, self::$path);
 
 		self::getFileClass();
 	}
@@ -24,7 +25,7 @@ class AutoLoadClass
 	protected static function getFileClass() {
 		if(!file_exists(self::$path)) {
 			ob_clean();
-			throw new Exception("The `".self::$class."` doesn't exists.", 1);
+			throw new Exception("The file `".self::$class."` doesn't exists.", 1);
 		}
 		$path = self::$path;
 		self::$path  = null;
