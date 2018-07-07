@@ -11,9 +11,13 @@
 	"autoload": {
 		"files": [
 			"core/bootstrap/start.php"
-		]
+        ],
+        "psr-4": {
+            "TMPHP\\": "src/"
+        }
 	},
     "require": {
+        "teedmaker/tmphp-core": "dev-master",
         "vlucas/phpdotenv": "^2.4",
         "kint-php/kint": "^2.2"
     }
