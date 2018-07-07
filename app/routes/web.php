@@ -1,7 +1,7 @@
 <?php
 
 Route::get('/', function() {
-	echo 'teste';
+	echo '<h1>Hello world!</h1>';
 });
 
 Route::group(['prefix'=>'users'], function() {
