@@ -21,9 +21,9 @@ I was experiment various ways to create a framework like this.
 One thing that was give me proud of was has `template engine`. When I finally created a `template engine` and this...
 
 ```php
-@foreach($x=0; $x<10; $x++)
+@for($x=0; $x<10; $x++)
 	// code
-@endforeach
+@endfor
 ```
 
 ... finally was possible... I continued and no more stop.
@@ -33,7 +33,7 @@ One thing that was give me proud of was has `template engine`. When I finally cr
 An another thing that was give me proud of was `routing`. Yeah, when I finally getted routes in a file like...
 
 ```php
-Route::get('users/{slug}');
+Route::get('users/{slug}', ...);
 ```
 
 ... and this give me a `MVC` complety... :smiley:
