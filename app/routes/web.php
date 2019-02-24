@@ -1,16 +1,17 @@
 <?php
 
 Route::get('/', function() {
-	echo '<h1 align="center">Hello world!</h1>';
+    echo '<h1 align="center">Hello world!</h1> <br/>'.
+         '<p align="center">May you can see <a href="users">all users</a></p>';
 });
 
 Route::group(['prefix'=>'users'], function() {
 	Route::get('/', function() {
-		echo "<a href='/users/tadeu'>tadeu</a>";
+		echo "<h1>All users</h1> <a href='/users/tadeu'>tadeu</a>";
 	});
 	Route::get('/{user}', function() {
 		echo "Tadeu' profile";
-		echo "<br> <a href=/users>outros perfis</a>";
+		echo "<br> <a href=/users>All users</a>";
 	});
 });
 
