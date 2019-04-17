@@ -7,7 +7,12 @@
             "name": "tadeubarbosa",
             "email": "tadeufbarbosa@gmail.com"
         }
-	],
+    ],
+    "autoload": {
+        "classmap": [
+            "app"
+        ]
+    },
     "require": {
         "teedmaker/tmphp-core": "dev-development"
     }
