@@ -1,6 +1,8 @@
 <?php
 
-Route::get('/', function() {
+Route::get('/', 'Home@index');
+
+Route::get('/welcome', function() {
     echo '<h1 align="center">Hello world!</h1> <br/>'.
          '<p align="center">May you can see <a href="users">all users</a></p>';
 });
